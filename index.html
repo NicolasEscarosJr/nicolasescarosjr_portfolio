@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Portfolio Web</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6529d4b16f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo2.png" class="logo" alt="mylogo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="mailto:jrnicolasescaros@gmail.com">Email me</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Software Engineer</p>
+          <h1>Hi, I'm <span>Nicolas</span><br />from Pasay City</h1>
+        </div>
+      </div>
+    </div>
+    <!-----------------about------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/FB_IMG_1577171212798.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              An experienced engineer with a bachelor's degree in Electronics
+              and communication engineering and a background in the telecom and
+              sales industries, seeking a career transition into software
+              engineering. Possesses a strong foundation in project management,
+              problem-solving and communication skills. Holding a deep
+              understanding of programming languages and development tools and
+              demonstrated ability to work effectively in a team environment.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Programming languages</span><br />Python, JavaScript,
+                  C++, Java
+                </li>
+                <li>
+                  <span>Software development tools</span><br />VScode, InteliJ,
+                  Pycharm, tkinter
+                </li>
+                <li><span>Project management</span><br />Agile, Scrum</li>
+                <li>
+                  <span>Communication</span><br />Interpersonal skills,
+                  technical writing, presentation skills
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Feb 2021 - Dec 2022</span><br />On-site project Engineer
+                </li>
+                <li>
+                  <span>Aug 2020 - Jan 2021</span><br />Team leader/Technical
+                  Engineer
+                </li>
+                <li>
+                  <span>Jan 2019 - Aug 2020</span><br />Application support
+                  Engineer
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>June 2013 - June 2018</span><br />Bachelor of science in
+                  electronics and communication engineering
+                </li>
+                <li>
+                  <span>June 2009 - Aug 2010</span><br />Aviation electronics
+                  technology
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------------services--------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-html5"></i>
+            <h2>Web Design</h2>
+            <p>
+              Designing and implementing user-friendly and visually appealing
+              website layouts using HTML, CSS, and JavaScript. Developing
+              responsive web designs that are optimized for mobile, tablet, and
+              desktop devices.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-python"></i>
+            <h2>Python programming</h2>
+            <p>
+              Used for backend development in web applications, where it is used
+              to handle data processing, database management, and other
+              server-side functions. has several web frameworks that make it
+              easy to build web applications quickly and efficiently. Some of
+              the most popular Python web frameworks include Django, Flask, and
+              Pyramid
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-uncharted"></i>
+            <h2>Web App Developer</h2>
+            <p>
+              Developing user-friendly and responsive web applications using
+              HTML, CSS, and JavaScript
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------Portfolio---------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/Web_app.jpg" alt="" />
+            <div class="layer">
+              <h3>Web application</h3>
+              <p>
+                A simple web application that allows you to add and delete tasks
+                using HTML, CSS, and JavaScript:
+              </p>
+              <a
+                href="https://nicolasescarosjr.github.io/nicolasescarosjrtask/my_task.html"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Calculator.jpg" alt="" />
+            <div class="layer">
+              <h3>Calculator App</h3>
+              <p>
+                In this program, the GUI is created using the tkinter library,
+                with a main window (root) and several widgets such as the entry
+                field for displaying the result and the calculator buttons. When
+                a button is clicked, the corresponding action is performed
+                (e.g., appending the clicked button text to the result entry or
+                evaluating the expression and displaying the result).
+              </p>
+              <a href="app.py"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/My_portfolio.jpg" alt="" />
+            <div class="layer">
+              <h3>My Web</h3>
+              <p>
+                A website that has a strong representation of my skills and
+                experience.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!--------------Contact--------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>jrnicolasescaros@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>+639457031977</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/nicolas.escaros.7/"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/nicola.escaro/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/nicolas-escaros-jr-768435181/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a
+              href="images/NicolasEscaros_ResumeSE.pdf"
+              download
+              class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            Copyright &#169; Nicolas.<i class="fa-solid fa-face-laugh-beam"></i>
+            Learning web development is fun
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
